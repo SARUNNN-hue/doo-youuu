@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Chrissnaa</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        .gif {
+            width: 300px; /* Adjust the width */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2 class="question">Do you love me?</h2>
+        <img class="gif" alt="gif" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2Jpc25ndmU0ZXY0Y2duM2l4dzdkbm5vdG5heXg1YnQxanZzeHV4YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/c76IJLufpNwSULPk77/giphy.webp"/>
+        <div class="btn-group">
+            <button class="yes-btn" onclick="playYesSound()">Yes</button>
+            <button class="no-btn" onclick="playNoSound()">No</button>
+        </div>
+    </div>
+    <script>
+        function playYesSound() {
+            document.getElementById('yes-sound').play();
+        }
+
+        function playNoSound() {
+            document.getElementById('no-sound').play();
+        }
+    </script>
+   <script src="script.js"></script>
+</body>
+</html>
